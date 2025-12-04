@@ -30,6 +30,29 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="lokasi"
+        options={{
+          title: 'Destinasi Wisata',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="mappin.and.ellipse" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+  name="search"
+  options={{
+   title: 'Cari',
+   tabBarIcon: ({ color }) => <IconSymbol size={28} name="magnifyingglass" color={color} />,
+  }}
+/>
+      <Tabs.Screen
+  name="mapwebview"
+  options={{
+   title: 'Map',
+   tabBarIcon: ({ color }) => <IconSymbol size={28} name="map.fill" color={color} />,
+  }}
+/>
+      
+
     </Tabs>
   );
 }
